@@ -1,0 +1,72 @@
+body {
+   font-family: 'Encode Sans Expanded', sans-serif;
+  background-color: #F5F5F5;
+  color: #404040;
+}
+
+.plore {
+  position: absolute;
+  right: 220px;
+  z-index: 4;
+  font-size: 200px;
+  font-weight: 100;
+  animation-name: plore-slide;
+  animation-duration: 4s;
+}
+@keyframes plore-slide {
+  0% {color: transparent;}
+  50% {color: transparent;}
+  100 {}
+}
+.star {
+  position: absolute;
+/*   display: inline-block; */
+  left: 350px;
+  z-index: 3;
+  font-size: 200px;
+  font-weight: 100;
+  animation-name: star-slide;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes star-slide {
+  0% {}
+  100% {left: 230px;}
+}
+
+.X {
+  color: #404040;
+  position: absolute;
+  right: 550px;
+  top: -100px;
+  z-index: 4;
+  font-weight: 400;
+/*   display: inline-block; */
+  font-size: 300px;
+  animation-name: x-slide;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@keyframes x-slide {
+  0% {}
+  100% {right: 670px; color: #D54B57;}
+}
+
+.rocket {
+  object-fit: cover;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  left: 42vw;
+  top: -50px;
+  z-index: 5;
+  animation-name: rocket-launch;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes rocket-launch {
+    0%   {left: 42vw; top: 100vh;}
+    100% {left: 42vw; top: -500px;}
+}
